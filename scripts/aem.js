@@ -15,6 +15,7 @@ function sampleRUM(checkpoint, data) {
   // eslint-disable-next-line max-len
   const timeShift = () => (window.performance ? window.performance.now() : Date.now() - window.hlx.rum.firstReadTime);
   try {
+    console.log('RUM checkpoint:', checkpoint, data);
     window.hlx = window.hlx || {};
     if (!window.hlx.rum || !window.hlx.rum.collector) {
       sampleRUM.enhance = () => {};

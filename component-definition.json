@@ -156,8 +156,14 @@
               }
             }
           }
-        },
-        {
+        }
+      ]
+    },
+    {
+      "title": "Custom",
+      "id": "custom",
+      "components": [
+       {
           "title": "Quote",
           "id": "quote",
           "plugins": {
